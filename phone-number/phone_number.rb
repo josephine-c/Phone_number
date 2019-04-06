@@ -9,7 +9,6 @@ class PhoneNumber
         while phone_num[0] < "2" do
             phone_num.gsub!(/^\d/, '')
         end
-        
-        p phone_num.length != 10 || phone_num[3] == "1" || phone_num[3] == "0"? nil : phone_num
+        p phone_num.length != 10 || phone_num[3] < "2"? nil : phone_num
     end
 end
